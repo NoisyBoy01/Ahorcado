@@ -31,7 +31,7 @@
         <ownedComment xmi:type="uml:Comment" xmi:id="_9IzuoSqVEeexAo4HWJwYxw" annotatedElement="_9IzuoCqVEeexAo4HWJwYxw">
           <body>Sirve para saber si ha ganado o perdido si ha ganado es boolean true y si ha perdido boolean false.</body>
         </ownedComment>
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
       </ownedAttribute>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_P_u-cDmWEee7_I7dbr2yew">
