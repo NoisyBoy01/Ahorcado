@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:Codegen="http://www.eclipse.org/papyrus/Codegen/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
   <uml:Model xmi:id="_FJsyACqNEeexAo4HWJwYxw" name="Ahorcado">
-    <packagedElement xmi:type="uml:Class" xmi:id="_ErnSYCqOEeexAo4HWJwYxw" name="Partida" visibility="public">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_uwO_cDsQEeegxsbAetYPKg" annotatedElement="_FJsyACqNEeexAo4HWJwYxw">
+      <body>es el numero de fallos que lleva el usuario,vamos a permitir 6 fallos</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ErnSYCqOEeexAo4HWJwYxw" name="Palabra" visibility="public">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_E5UhwCqPEeexAo4HWJwYxw" name="Palabra">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
@@ -33,6 +36,66 @@
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
       </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9X1DoDmfEee7_I7dbr2yew" name="Partida" visibility="public">
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_r0mX8DsUEeegxsbAetYPKg" name="monstrarProgeso"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="__4-sQDsUEeegxsbAetYPKg" name="pedirLetra">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_E77owDsVEeegxsbAetYPKg" name="letra" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_5lVhgBydEduyofBvg4RL2w"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_N6KIADsVEeegxsbAetYPKg" name="resolver"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_o6s9MDsVEeegxsbAetYPKg" name="comprobarFinal">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_o6s9MTsVEeegxsbAetYPKg" name="fin" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_dl_6UDsLEeegxsbAetYPKg" name="Palabra2" visibility="public">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_h2CMIDsLEeegxsbAetYPKg" name="palabraOculta"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4BY3MDsPEeegxsbAetYPKg" name="letrasDescubiertas">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_5lVhgBydEduyofBvg4RL2w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7e0nYDsPEeegxsbAetYPKg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7fDQ4DsPEeegxsbAetYPKg" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_AA32QDsQEeegxsbAetYPKg" name="letrasFallidas">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_5lVhgBydEduyofBvg4RL2w"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BlYV8DsQEeegxsbAetYPKg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BlcnYDsQEeegxsbAetYPKg" value="*"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_qMaBMDsLEeegxsbAetYPKg" name="elegirPalabra"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_CDfLEDsMEeegxsbAetYPKg" name="comprobarLetra" visibility="public">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_Bx7rkDsNEeegxsbAetYPKg">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Bx7rkTsNEeegxsbAetYPKg" annotatedElement="_Bx7rkDsNEeegxsbAetYPKg">
+            <body>es la letra a comprobar si esta en la palabra a adivinar</body>
+          </ownedComment>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_EeQdADsPEeegxsbAetYPKg" name="estaba" direction="return">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_EeQdATsPEeegxsbAetYPKg" annotatedElement="_EeQdADsPEeegxsbAetYPKg">
+            <body>devuelve verdader si la letra estaba al menos una vez</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_cvfBsDsOEeegxsbAetYPKg" name="mostrarResultado"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_DcGfoDsTEeegxsbAetYPKg" name="comprobarSiGanado">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_XwHLYDsTEeegxsbAetYPKg" name="ganado">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_hki54DsTEeegxsbAetYPKg" name="comprobarPalabra">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mDcHEDsTEeegxsbAetYPKg" name="palabra">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xv618DsLEeegxsbAetYPKg" name="Horca2">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_1RqeYDsLEeegxsbAetYPKg" name="fallo">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_3kwiYDsLEeegxsbAetYPKg" name="dibujar"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_B20ZUDsSEeegxsbAetYPKg" name="incrementarFallo"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_u3AD4DsSEeegxsbAetYPKg" name="comprobarSiPerdido"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_P_u-cDmWEee7_I7dbr2yew">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_P_wzoDmWEee7_I7dbr2yew" source="http://www.eclipse.org/uml2/2.0.0/UML">
