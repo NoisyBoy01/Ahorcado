@@ -63,6 +63,7 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BlYV8DsQEeegxsbAetYPKg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BlcnYDsQEeegxsbAetYPKg" value="*"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_51hq4UCMEeeCy4M2pYFNFA" name="partida" type="_9X1DoDmfEee7_I7dbr2yew" aggregation="composite" association="_51f1sECMEeeCy4M2pYFNFA"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_qMaBMDsLEeegxsbAetYPKg" name="elegirPalabra"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_CDfLEDsMEeegxsbAetYPKg" name="comprobarLetra" visibility="public">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_Bx7rkDsNEeegxsbAetYPKg">
@@ -93,9 +94,22 @@
       <ownedAttribute xmi:type="uml:Property" xmi:id="_1RqeYDsLEeegxsbAetYPKg" name="fallo">
         <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
       </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_vw3vEECMEeeCy4M2pYFNFA" name="partida" type="_9X1DoDmfEee7_I7dbr2yew" aggregation="composite" association="_vw0EsECMEeeCy4M2pYFNFA"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_3kwiYDsLEeegxsbAetYPKg" name="dibujar"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_B20ZUDsSEeegxsbAetYPKg" name="incrementarFallo"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_u3AD4DsSEeegxsbAetYPKg" name="comprobarSiPerdido"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vw0EsECMEeeCy4M2pYFNFA" memberEnd="_vw3vEECMEeeCy4M2pYFNFA _vw4WIECMEeeCy4M2pYFNFA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vw154ECMEeeCy4M2pYFNFA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vw2g8ECMEeeCy4M2pYFNFA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_vw4WIECMEeeCy4M2pYFNFA" name="horca2" type="_xv618DsLEeegxsbAetYPKg" association="_vw0EsECMEeeCy4M2pYFNFA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_51f1sECMEeeCy4M2pYFNFA" memberEnd="_51hq4UCMEeeCy4M2pYFNFA _51iR8ECMEeeCy4M2pYFNFA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_51gcwECMEeeCy4M2pYFNFA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_51hq4ECMEeeCy4M2pYFNFA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_51iR8ECMEeeCy4M2pYFNFA" name="palabra2" type="_dl_6UDsLEeegxsbAetYPKg" association="_51f1sECMEeeCy4M2pYFNFA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_P_u-cDmWEee7_I7dbr2yew">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_P_wzoDmWEee7_I7dbr2yew" source="http://www.eclipse.org/uml2/2.0.0/UML">
